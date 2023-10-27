@@ -20,4 +20,8 @@ int get_index_suite(int numc, int numv[]);
 int get_k_rec_p_sum(int numc, int numv[]);
 /* get_rec_p_sum */
 int get_rec_p_sum(int numc, int numv[]);
-
+/* print_car */
+int print_car(int numc, int numv[]);
+/* imp_num */
+int r_p(int x, int n);
+int imp_num(int numc, int numv[]);

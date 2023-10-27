@@ -30,6 +30,10 @@ int main(int argc, char *argv[]){
         function = &get_k_rec_p_sum;
     } else if (strcmp(invoke_name, "get_rec_p_sum") == 0){
         function = &get_rec_p_sum;
+    } else if (strcmp(invoke_name, "print_car") == 0){
+        function = &print_car; 
+    } else if (strcmp(invoke_name, "imp_num") == 0){
+        function = &imp_num;
     } else{
         printf("Invalide name (%s)\n", invoke_name);
         return 1;

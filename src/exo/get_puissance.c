@@ -1,13 +1,16 @@
 #include "../headers/general.h"
 
+int r_p(int x, int n){
+    if (n == 1) {return x;}
+    else if (n%2 == 0) {
+        return r_p(x*x, (int)n/(int)2);
+    } else {
+        return x*r_p(x*x, (int)(n-1)/(int)2);
+    }
+}
 int get_puissance(int numc, int numv[]){
     if (numc > 1){
-        int ret = 1;
-        for (int i = 0; i < numv[1]; i++)
-        {
-            ret *= numv[0];
-        }
-        return ret;
+        return r_p(numv[0],numv[1]);
     }
     else {
         printf("To less parameters.\n");
