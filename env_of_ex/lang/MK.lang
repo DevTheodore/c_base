@@ -1,0 +1,3 @@
+AZ
+AA \
+help : @\nlang:%s\nshow_info : %i\nshow_warn : %i\nwarn_are_err : %i\nsave_log : %i\nsave_info_in_log : %i\nlog_file:%s\nlang_dir:%s

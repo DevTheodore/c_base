@@ -1,7 +1,8 @@
 all: compiled/prog
 
-compiled/prog: src/main.c
-	 clang src/*.c src/exo/*.c -o compiled/prog -Wall -Werror -fsanitize=address
+compiled/prog: 
+	 sh/cmp.sh
+stable: 
+	 sh/sta.sh -Werror
 clean:
-	 rm compiled/*
-#add `sdl2-config --cflags --libs` with compiler for sdl2
+	 rm compiled/*.comp
